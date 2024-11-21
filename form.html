@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Basic HTML Form</h1>
+    <form action="">
+      <fieldset>
+        <legend>Name</legend>
+        <label for="fname">First Name</label><br />
+        <input type="text" id="fname" name="fname" />
+        <br />
+        <label for="lname">Last Name</label><br />
+        <input type="text" id="lname" name="lname" />
+        <br />
+      </fieldset>
+      <fieldset>
+        <legend>Other Questions</legend>
+        <p>Choose a drink:</p>
+        <input type="radio" name="drink" id="coffee" />
+        <label for="coffee">Coffee</label><br />
+        <input type="radio" name="drink" id="tea" />
+        <label for="tea">Tea</label><br />
+        <input type="radio" name="drink" id="hotC" />
+        <label for="hotC">Hot Chocolate</label><br />
+        <p>What ice creeam do you like?</p>
+        <input type="checkbox" name="iceCream" id="choco" />
+        <label for="choco">Cocolate</label><br />
+        <input type="checkbox" name="iceCream" id="vanilla" />
+        <label for="vanilla">Vanilla</label><br />
+        <input type="checkbox" name="iceCream" id="strawberry" />
+        <label for="strawberry">Strawberry</label><br />
+        <input type="checkbox" name="iceCream" id="mango" />
+        <label for="mango">Mango</label><br />
+        <br />
+        <label for="school">Select a School: </label><br />
+        <select name="school" id="school">
+          <option value="harvard">Harvard</option>
+          <option value="oxford">Oxford</option>
+          <option value="dtu">DTU</option>
+        </select>
+        <br />
+        <br />
+        <label for="comments">Please provide comments</label><br />
+        <textarea name="comments" id="comments" cols="25" rows="5"></textarea>
+      </fieldset>
+      <br>
+      <input type="submit" value="Submit Form">
+    </form>
+  </body>
+</html>
