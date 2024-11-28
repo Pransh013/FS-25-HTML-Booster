@@ -1,5 +1,11 @@
-h2 {
-    color: red;
-    background-color: black;
-    font-size: 20;
+
+
+ul, ol, table {
+    background-color: red;
+    color: white;
+}
+
+/* Group Selector */
+h1, h2, h3 {
+    color: blue;
 }
