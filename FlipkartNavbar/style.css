@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+    background-color: #F1F2F4;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    padding: 0 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+
+.input-container {
+    background-color: #e4ecfd;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 40px;
+    padding: 0 12px;
+    border-radius: 6px;
+    gap: 8px;
+}
+
+.input-container > input {
+    background-color: #e4ecfd;
+    border: none;
+    height: 100%;
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.input-container > svg {
+    color: rgb(92, 91, 91);
+    width: 24px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-wrap: nowrap;
+}
+
+nav > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav svg {
+    width: 28px;
+}
+
+main {
+    padding: 8px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main > div {
+    width: 95%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    place-items: center;
+    padding: 8px 0;
+}
+
+main > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.animate {
+    width: 20px;
+}
+
+nav > div:first-child:hover > .animate {
+    transform: rotate(180deg);
+    transition: all .5s ease-in-out;
+}
+
